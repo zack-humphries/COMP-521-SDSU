@@ -1,0 +1,60 @@
+\documentclass{article}
+
+%\usepackage{epsfig}
+
+%\usepackage{algorithm2e}
+%\usepackage[linesnumbered]{algorithm2e}
+%\usepackage[linesnumbered,ruled]{algorithm2e}
+%\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[linesnumbered]{algorithm2e}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{systeme}
+\usepackage{enumitem}   
+\title{SDSU/COMP521/Fall 2022}
+\author{Homework 06 - Due Date: 11/11/2022}
+\pagenumbering{gobble}
+\begin{document}
+
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\maketitle
+
+\section*{Problem 1}
+Find the solution to the following initial value problem.
+
+\begin{equation}
+\frac{d^2u}{dt^2}+2u= 0 \quad  for \quad t \in [0,10]
+\quad with \quad u(0) = 1 \quad and \quad \frac{du}{dt}(0) = 0
+\label{eq01}
+\end{equation}
+
+, using:
+
+\begin{enumerate}
+	\item \textbf{Forward Euler}. Write your own code.\\
+	\item \textbf{Backward Euler}. Write your own code.\\
+	\item \textbf{The Trapezoidal method}. Write your own code.\\
+\end{enumerate}
+
+For every method used you must:
+
+\begin{enumerate}
+	\item Plot $\frac{du}{dt}$ versus $u$. Compare to the plot obtained for the analytical solution. Explain.
+	\item Solve the problem using different step sizes. Present the log-log plots of the GTE versus step size at the last solution point. What do you conclude from the plots? (Order of accuracy).
+\end{enumerate}
+
+
+\section*{Deliverable}
+You have to present a \textbf{REPORT} and submit it as a file in .PDF format. This report must describe the solution of each problem. It must explain and discuss the results. Do not forget to identify the plots and tables. The report must contain the script used to call the functions.\\
+
+\section*{Important:}
+\begin{itemize}
+	\item You are encouraged to write your report using \LaTeX. 
+\end{itemize}
+ 
+\end{document}
