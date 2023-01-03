@@ -13,7 +13,7 @@ Homework 2 Report:
 
 Homework 3 Report:
 
-[HW03COMP521Fall2022.pdf](https://github.com/zack-humphries/COMP-521-SDSU/files/10338901/HW03COMP521Fall2022.pdf)
+[HW3_Zack_Humphries_COMP_521.pdf](https://github.com/zack-humphries/COMP-521-SDSU/files/10338921/HW3_Zack_Humphries_COMP_521.pdf)
 
 
 Homework 4 Report:
