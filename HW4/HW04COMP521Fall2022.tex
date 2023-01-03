@@ -1,0 +1,32 @@
+\documentclass{article}
+
+\usepackage[margin=0.75in]{geometry}
+
+\title{SDSU COMP521 \\ Fall 2022}
+\author{Homework 04 - Due Date: 10/14/2022}
+\pagenumbering{gobble}
+\begin{document}
+
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\maketitle
+\section*{Problem}
+
+Approximate the integral of $f(x)=e^{-2x}sin(2\pi x)$ on the interval $x \in [0,3.5]$ using:
+\begin{enumerate}
+	\item The composite trapezoidal rule
+	\item The composite Simpson's rule
+	\item Adaptive quadrature
+\end{enumerate}
+\textbf{You have to use the Matlab code provided with this document}.\\
+
+\textbf{For the composite rules}, use the following number of integration subintervals $N=\{20,40,80,160\}$. Use these solutions to determine the orders of accuracy. The exact integral is 0.1446445197. Use this value to calculate the absolute errors.\\
+
+Compare the results from the quadratures. Use a table to show the results.\\
+
+\textbf{Discuss your results}.\\
+
+
+\textbf{Deliverable:} Submit a .PDF file with your report. Submit the main.m code file only with your modifications.
+
+
+\end{document}

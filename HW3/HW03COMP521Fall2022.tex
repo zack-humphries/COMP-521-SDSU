@@ -1,0 +1,52 @@
+\documentclass{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage[linesnumbered]{algorithm2e}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{systeme}
+\usepackage{enumitem}   
+
+
+\title{SDSU \\ COMP521 Fall 2022}
+\author{Homework 03 - Due Date: 09/30/2022}
+\pagenumbering{gobble}
+
+
+\begin{document}
+
+\maketitle
+
+\section*{Problem}
+Calculate finite difference approximation of $u''(x)$ for the function $u(x) = x^2 - cos(10x)$ on the interval $x \in [0.4,1]$. You have to implement the following finite difference approximation:
+
+\begin{equation*}
+	\frac{-u_{i+2} + 16u_{i+1}-30u_i+16u_{i-1} - u_{i-2}}{12\Delta x^2}
+\end{equation*}
+
+You have to determine the order of accuracy of this approximation. Follow the instructions below.\\
+
+\section*{Instructions}
+\begin{enumerate}
+	\item You have to work on your solution using the following MATLAB files:
+	\begin{itemize}
+		\item \textbf{main.m }
+		\item \textbf{Fx.m}
+		\item \textbf{secderivativeactual.m}
+		\item \textbf{secderivativeapprox.m}
+	\end{itemize}
+    The MATLAB files have comments that will guide you. Read them carefully.
+	\item Show the $loglog$ plots with the error metrics versus the grid sizes.
+	\item Fit the $loglog$ plots to a straight line. Use the fit to determine the order of accuracy. Explain.
+	\item Discuss the differences from using different metrics. Do they lead to the same conclusion about the order of accuracy?
+\end{enumerate}
+
+
+\textbf{Deliverable:} Submit a .PDF file with your report. Submit all the code files with your modifications.
+
+
+\end{document}

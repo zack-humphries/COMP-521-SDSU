@@ -1,0 +1,57 @@
+\documentclass{article}
+
+%\usepackage{epsfig}
+
+%\usepackage{algorithm2e}
+%\usepackage[linesnumbered]{algorithm2e}
+%\usepackage[linesnumbered,ruled]{algorithm2e}
+%\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[linesnumbered]{algorithm2e}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{systeme}
+\usepackage{enumitem}   
+\title{SDSU/COMP521/Fall 2019}
+\author{Homework 05 - Due Date: 10/28/2022}
+\pagenumbering{gobble}
+\begin{document}
+
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\maketitle
+
+\section*{Problem 1}
+Find the roots to the following functions $f(x)$.
+\begin{enumerate}[label=(\alph*)]
+	\item \label{f1} $f(x) = -x^2 +x + 2$,
+	\item \label{f2} $f(x) = e^x -2 - x$,	
+\end{enumerate}
+
+using:
+
+\begin{enumerate}
+	\item \textbf{Fixed point iteration}. Choose your $g(x)$ and a tolerance of $10^{-9}$. For \ref{f1} start with the following points $p_0 =\{\,2.5\,;\,0.15\,;\,1.5\,\}$. For \ref{f2} start with the following points $p_0 =\{\,2.5\,; \,0.15\,;\, 0.25\,\}$. What can you say about the convergence? \textbf{Explain}.
+	\item \textbf{Bisection method}. Choose a tolerance of $10^{-9}$. For \ref{f1} and \ref{f2} use the intervals $x \in [\,-4.0\,;\,1.0\,]$ and $x \in [\,0.5\,;\,3.0\,]$. What can you say about the convergence? \textbf{Use plots and discuss}.
+	%\item \textbf{The false position method}. Choose a tolerance of $10^{-9}$. For \ref{f1} and \ref{f2} use the intervals $x \in [\,-4.0\,;\,1.0\,]$ and $x \in [\,0.5\,;\,3.0\,]$. What can you say about the convergence? \textbf{Use plots and discuss}.
+	\item \textbf{Newton's method}. Choose $\delta=\epsilon=10^{-9}$. For \ref{f1} and \ref{f2} start with the following points $p_0 =\{\,-3.0\,;\,0.0\,;\,6.0\,\}$. What can you say about the convergence? \textbf{Use plots and discuss}.
+	%\item \textbf{Secant method}. Choose $\delta=\epsilon=10^{-9}$. For \ref{f1} and \ref{f2} start with the following points:\\ $(p_0,p_1) =\{\,(-3.0,-2.9)\,;\,(0.0,0.1)\,;\,(6.0,5.9)\,\}$. What can you say about the convergence? \textbf{Explain}.	
+		
+	
+\end{enumerate}
+
+\textbf{Important:} Use all the necessary graphs and tables to present and discuss your results.
+
+
+\section*{Deliverable}
+You have to present a \textbf{REPORT} and submit it as a file in .PDF format. This report must describe the solution of each problem. It must explain and discuss the results. Do not forget to identify the plots and tables. The report must contain the script used to call the functions. You may use the functions included in our textbook.\\
+
+\section*{Important:}
+\begin{itemize}
+	\item You are encouraged to write your report using \LaTeX. 
+\end{itemize}
+ 
+\end{document}
